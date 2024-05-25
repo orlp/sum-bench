@@ -1,0 +1,17 @@
+[package]
+name = "sum-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+accurate = "0.3.1"
+fsum = "0.1.2"
+rand = "0.8.5"
+rayon = "1.9.0"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "criterion"
+harness = false
